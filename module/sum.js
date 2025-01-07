@@ -1,7 +1,7 @@
-const add = (a, b) => {
-  return a + b;
-};
+const superHero = require("./module-caching");
+console.log(superHero.getName());
+superHero.setName("Batman");
+console.log(superHero.getName());
 
-const sum = add(1, 2);
-
-module.exports = sum;
+const newHero = require("./module-caching");
+console.log(newHero.getName());
