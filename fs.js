@@ -14,3 +14,9 @@ fs.readFile("./file.txt", "utf-8", (err, data) => {
 });
 
 console.log("Third");
+
+fs.writeFile("./file.txt", " Hello World", { flag: "a" }, (err, data) => {
+  if (err) {
+    console.log({ err });
+  }
+});
